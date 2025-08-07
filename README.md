@@ -62,7 +62,7 @@ principles. Each pattern includes:
 
 Patterns that deal with object interaction and responsibility distribution.
 
-| Pattern                                                                       | Description                      | Implementation                                                   |
-|-------------------------------------------------------------------------------|----------------------------------|------------------------------------------------------------------|
-| [Memento](src/main/java/design_patterns/behavioral/momento_pattern/README.md) | Implementing the undo mechanisms | [View](src/main/java/design_patterns/behavioral/momento_pattern) |
+| Pattern | Description                      | Implementation                                                   |
+|---------|----------------------------------|------------------------------------------------------------------|
+| Memento | Implementing the undo mechanisms | [View](src/main/java/design_patterns/behavioral/momento_pattern) |
 
