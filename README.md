@@ -66,3 +66,10 @@ Patterns that deal with object interaction and responsibility distribution.
 |---------|----------------------------------|------------------------------------------------------------------|
 | Memento | Implementing the undo mechanisms | [View](src/main/java/design_patterns/behavioral/momento_pattern) |
 
+## 🚧 Ongoing Development
+
+This repository is under active development, with more design patterns being implemented regularly. Future updates will
+include additional creational, structural, and behavioral patterns, along with real-world examples, performance
+considerations, and comparisons between similar patterns. Contributions and suggestions are welcome—feel free to open
+an issue or submit a pull request! Stay tuned for more patterns like Interpreter, Chain of Responsibility, and Null
+Object, coming soon.
