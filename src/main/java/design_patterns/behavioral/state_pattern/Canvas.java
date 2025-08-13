@@ -7,17 +7,13 @@ import lombok.Setter;
 @Setter
 public class Canvas {
 
-    private ToolType currentTool;
+    private Tool currentTool;
 
     public void mouseUp() {
-        if (currentTool == ToolType.SELECTION) System.out.println("Selection Icon");
-        else if (currentTool == ToolType.BRUSH) System.out.println("Brush Icon");
-        else if (currentTool == ToolType.ERASER) System.out.println("Eraser Icon");
+        currentTool.mouseUp();
     }
 
     public void mouseDown() {
-        if (currentTool == ToolType.SELECTION) System.out.println("Draw Dashed Rectangle");
-        else if (currentTool == ToolType.BRUSH) System.out.println("Draw A Line");
-        else if (currentTool == ToolType.ERASER) System.out.println("Erase Something");
+        currentTool.mouseDown();
     }
 }
