@@ -7,8 +7,10 @@ public class Main {
         browseHistory.push("b");
         browseHistory.push("c");
 
-        for (int i = 0; i < browseHistory.getUrls().size(); i++) {
-            System.out.println(browseHistory.getUrls().get(i));
+        Iterator<String> iterator = browseHistory.createIterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.current());
+            iterator.next();
         }
     }
 }
