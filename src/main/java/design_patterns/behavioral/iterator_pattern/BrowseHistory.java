@@ -1,8 +1,11 @@
 package design_patterns.behavioral.iterator_pattern;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class BrowseHistory {
     private final List<String> urls = new ArrayList<>();
 
