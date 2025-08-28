@@ -1,15 +1,9 @@
 package design_patterns.behavioral.template_method_pattern;
 
-public class TransferMoneyTask {
+public class TransferMoneyTask extends Task {
 
-    private AuditTrail auditTrail;
-
-    public TransferMoneyTask(AuditTrail auditTrail) {
-        this.auditTrail = auditTrail;
-    }
-
-    public void execute() {
-        auditTrail.record();
+    @Override
+    protected void doExecute() {
         System.out.println("Transferring Money");
     }
 }

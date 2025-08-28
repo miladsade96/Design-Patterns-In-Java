@@ -1,15 +1,9 @@
 package design_patterns.behavioral.template_method_pattern;
 
-public class GenerateReportTask {
+public class GenerateReportTask extends Task {
 
-    private AuditTrail auditTrail;
-
-    public GenerateReportTask(AuditTrail auditTrail) {
-        this.auditTrail = auditTrail;
-    }
-
-    public void execute() {
-        auditTrail.record();
+    @Override
+    protected void doExecute() {
         System.out.println("Generating Report");
     }
 }
