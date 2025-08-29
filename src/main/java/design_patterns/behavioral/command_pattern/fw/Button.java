@@ -1,4 +1,4 @@
-package design_patterns.behavioral.command_pattern;
+package design_patterns.behavioral.command_pattern.fw;
 
 import lombok.Getter;
 import lombok.Setter;
