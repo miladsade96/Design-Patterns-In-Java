@@ -7,8 +7,13 @@ import lombok.Setter;
 @Setter
 public class Button {
     private String label;
+    private Command command;
+
+    public Button(Command command) {
+        this.command = command;
+    }
 
     private void click() {
-        // ............
+        command.execute();
     }
 }
