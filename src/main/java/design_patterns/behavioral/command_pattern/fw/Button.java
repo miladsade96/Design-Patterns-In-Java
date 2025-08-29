@@ -13,7 +13,7 @@ public class Button {
         this.command = command;
     }
 
-    private void click() {
+    public void click() {
         command.execute();
     }
 }
