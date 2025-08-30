@@ -1,10 +1,13 @@
 package design_patterns.behavioral.observer_pattern;
 
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
-@Setter
-public class DataSource {
+public class DataSource extends Subject {
     private int value;
+
+    public void setValue(int value) {
+        this.value = value;
+        notifyObservers();
+    }
 }
