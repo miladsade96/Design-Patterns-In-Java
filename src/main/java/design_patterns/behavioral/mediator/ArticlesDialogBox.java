@@ -25,6 +25,7 @@ public class ArticlesDialogBox extends DialogBox {
 
     public void simulateUserInteraction() {
         articlesListBox.setSelection("Article 1");
+        titleTextBox.setContent("");
         System.out.println("TextBox: " + titleTextBox.getContent());
         System.out.println("Button: " + saveButton.isEnabled());
     }
