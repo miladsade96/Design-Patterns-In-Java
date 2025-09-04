@@ -2,9 +2,9 @@ package design_patterns.behavioral.mediator;
 
 public class ArticlesDialogBox extends DialogBox {
 
-    private ListBox articlesListBox = new ListBox(this);
-    private TextBox titleTextBox = new TextBox(this);
-    private Button saveButton = new Button(this);
+    private final ListBox articlesListBox = new ListBox(this);
+    private final TextBox titleTextBox = new TextBox(this);
+    private final Button saveButton = new Button(this);
 
     @Override
     public void changed(UIControl control) {
@@ -26,6 +26,7 @@ public class ArticlesDialogBox extends DialogBox {
     public void simulateUserInteraction() {
         articlesListBox.setSelection("Article 1");
         titleTextBox.setContent("");
+        titleTextBox.setContent("Article 2");
         System.out.println("TextBox: " + titleTextBox.getContent());
         System.out.println("Button: " + saveButton.isEnabled());
     }
