@@ -1,16 +1,16 @@
 package design_patterns.behavioral.mediator;
 
-public class ArticlesDialogBox extends DialogBox {
+public class ArticlesDialogBox {
 
-    private final ListBox articlesListBox = new ListBox(this);
-    private final TextBox titleTextBox = new TextBox(this);
-    private final Button saveButton = new Button(this);
+    private final ListBox articlesListBox = new ListBox();
+    private final TextBox titleTextBox = new TextBox();
+    private final Button saveButton = new Button();
 
-    @Override
-    public void changed(UIControl control) {
-        if (control == articlesListBox) articleSelected();
-        else if (control == titleTextBox) titleChanged();
+    public ArticlesDialogBox() {
+        articlesListBox.addEventHandler(this::articleSelected);
+        titleTextBox.addEventHandler(this::titleChanged);
     }
+
 
     private void articleSelected() {
         titleTextBox.setContent(articlesListBox.getSelection());
