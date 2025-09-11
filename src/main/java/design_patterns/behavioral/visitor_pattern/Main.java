@@ -6,5 +6,6 @@ public class Main {
         document.addNode(new HeadingNode());
         document.addNode(new AnchorNode());
         document.execute(new HighlightOperation());
+        document.execute(new PlainTextOperation());
     }
 }
