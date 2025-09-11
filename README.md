@@ -72,7 +72,8 @@ Patterns that deal with object interaction and responsibility distribution.
 | Command                 | Turns a request into a stand-alone object containing all information about the request                                                                    | [View](src/main/java/design_patterns/behavioral/command_pattern)                 |
 | Observer                | Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically         | [View](src/main/java/design_patterns/behavioral/observer_pattern)                |
 | Mediator                | Reduces chaotic dependencies between objects by restricting direct communications between them and forcing them to collaborate only via a mediator object | [View](src/main/java/design_patterns/behavioral/mediator_pattern)                |
-| Chain of Responsibility | allows passing requests along a chain of handlers                                                                                                         | [View](src/main/java/design_patterns/behavioral/chain_of_responsibility_pattern) |
+| Chain of Responsibility | Allows passing requests along a chain of handlers                                                                                                         | [View](src/main/java/design_patterns/behavioral/chain_of_responsibility_pattern) |
+| Visitor                 | Allows adding new operations to existing object structures without modifying the structures themselves                                                    | [View](src/main/java/design_patterns/behavioral/visitor_pattern)                 |
 
 ## 🚧 Ongoing Development
 
