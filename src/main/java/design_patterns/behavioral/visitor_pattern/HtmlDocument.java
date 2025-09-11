@@ -9,4 +9,10 @@ public class HtmlDocument {
     public void addNode(HtmlNode node) {
         nodes.add(node);
     }
+
+    public void highlight() {
+        for (HtmlNode node : nodes) {
+            node.highlight();
+        }
+    }
 }
