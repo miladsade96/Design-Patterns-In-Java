@@ -1,5 +1,5 @@
 package design_patterns.behavioral.visitor_pattern;
 
 public interface HtmlNode {
-    void highlight();
+    void execute(Operation operation);
 }
