@@ -31,9 +31,10 @@ Patterns that deal with object interaction and responsibility distribution.
 
 Patterns that deal with object creation mechanisms.
 
-| Pattern   | Description                                                                                  | Implementation                                                     |
-|-----------|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| Singleton | Ensures a class has only one instance and provides a global point of access to that instance | [View](src/main/java/design_patterns/creational/singleton_pattern) |
+| Pattern        | Description                                                                                                                         | Implementation                                                          |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Singleton      | Ensures a class has only one instance and provides a global point of access to that instance                                        | [View](src/main/java/design_patterns/creational/singleton_pattern)      |
+| Factory Method | Provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created | [View](src/main/java/design_patterns/creational/factory_method_pattern) |
 
 ## 🚧 Ongoing Development
 
