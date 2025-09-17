@@ -1,4 +1,4 @@
-package design_patterns.creational.factory_method_pattern;
+package design_patterns.creational.factory_method_pattern.sample;
 
 public class Main {
     public static void main(String[] args) {

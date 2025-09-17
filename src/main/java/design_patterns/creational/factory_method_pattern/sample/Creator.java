@@ -1,4 +1,4 @@
-package design_patterns.creational.factory_method_pattern;
+package design_patterns.creational.factory_method_pattern.sample;
 
 public abstract class Creator {
     public abstract Product factoryMethod();
