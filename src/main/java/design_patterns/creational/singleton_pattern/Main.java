@@ -8,5 +8,12 @@ public class Main {
 
         ConfigManager anotherConfig = ConfigManager.getInstance();
         System.out.println("App Name from another reference: " + anotherConfig.get("app_name"));
+
+
+        // Eager Initialization:
+        EagerSingleton eagerSingleton1 = EagerSingleton.getInstance();
+        EagerSingleton eagerSingleton2 = EagerSingleton.getInstance();
+        System.out.println("eagerSingleton1: " + eagerSingleton1.hashCode());
+        System.out.println("eagerSingleton2: " + eagerSingleton2.hashCode());
     }
 }
