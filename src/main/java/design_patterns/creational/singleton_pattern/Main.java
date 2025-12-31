@@ -23,5 +23,13 @@ public class Main {
         System.out.println("lazySingleton1: " + lazySingleton1.hashCode());
         System.out.println("lazySingleton2: " + lazySingleton2.hashCode());
         System.out.println("Lazy singletons are the same instance: " + (lazySingleton1 == lazySingleton2));
+
+        // Thread-Safe Singleton:
+        ThreadSafeSingleton threadSafeSingleton1 = ThreadSafeSingleton.getInstance();
+        ThreadSafeSingleton threadSafeSingleton2 = ThreadSafeSingleton.getInstance();
+        System.out.println("threadSafeSingleton1: " + threadSafeSingleton1.hashCode());
+        System.out.println("threadSafeSingleton2: " + threadSafeSingleton2.hashCode());
+        System.out.println("Thread-safe singletons are the same instance: " + (threadSafeSingleton1 == threadSafeSingleton2));
+
     }
 }
