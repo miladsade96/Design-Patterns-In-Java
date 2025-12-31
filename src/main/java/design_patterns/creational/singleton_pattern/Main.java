@@ -45,5 +45,12 @@ public class Main {
         System.out.println("billPughSingleton2: " + billPughSingleton2.hashCode());
         System.out.println("Bill Pugh singletons are the same instance: " + (billPughSingleton1 == billPughSingleton2));
 
+        // Enum Singleton:
+        EnumSingleton enumSingleton1 = EnumSingleton.INSTANCE;
+        EnumSingleton enumSingleton2 = EnumSingleton.INSTANCE;
+        System.out.println("enumSingleton1: " + enumSingleton1.hashCode());
+        System.out.println("enumSingleton2: " + enumSingleton2.hashCode());
+        System.out.println("Enum singletons are the same instance: " + (enumSingleton1 == enumSingleton2));
+
     }
 }
