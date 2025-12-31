@@ -37,7 +37,13 @@ public class Main {
         System.out.println("doubleCheckedSingleton1: " + doubleCheckedSingleton1.hashCode());
         System.out.println("doubleCheckedSingleton2: " + doubleCheckedSingleton2.hashCode());
         System.out.println("Double-checked locking singletons are the same instance: " + (doubleCheckedSingleton1 == doubleCheckedSingleton2));
-        
+
+        // Bill Pugh Singleton:
+        BillPughSingleton billPughSingleton1 = BillPughSingleton.getInstance();
+        BillPughSingleton billPughSingleton2 = BillPughSingleton.getInstance();
+        System.out.println("billPughSingleton1: " + billPughSingleton1.hashCode());
+        System.out.println("billPughSingleton2: " + billPughSingleton2.hashCode());
+        System.out.println("Bill Pugh singletons are the same instance: " + (billPughSingleton1 == billPughSingleton2));
 
     }
 }
