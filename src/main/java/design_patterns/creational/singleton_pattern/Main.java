@@ -31,5 +31,13 @@ public class Main {
         System.out.println("threadSafeSingleton2: " + threadSafeSingleton2.hashCode());
         System.out.println("Thread-safe singletons are the same instance: " + (threadSafeSingleton1 == threadSafeSingleton2));
 
+        // Double-Checked Locking Singleton:
+        DoubleCheckedLockingSingleton doubleCheckedSingleton1 = DoubleCheckedLockingSingleton.getInstance();
+        DoubleCheckedLockingSingleton doubleCheckedSingleton2 = DoubleCheckedLockingSingleton.getInstance();
+        System.out.println("doubleCheckedSingleton1: " + doubleCheckedSingleton1.hashCode());
+        System.out.println("doubleCheckedSingleton2: " + doubleCheckedSingleton2.hashCode());
+        System.out.println("Double-checked locking singletons are the same instance: " + (doubleCheckedSingleton1 == doubleCheckedSingleton2));
+        
+
     }
 }
