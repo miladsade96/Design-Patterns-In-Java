@@ -1,17 +1,15 @@
 package design_patterns.creational.singleton_pattern;
 
+import lombok.Getter;
+
 // Eager Initialization
 public class EagerSingleton {
 
+    @Getter
     private static final EagerSingleton instance = new EagerSingleton();
 
     private EagerSingleton() {
-        if (instance != null) {
-            throw new RuntimeException("Please use getInstance() method!");
-        }
+        // Private constructor to prevent instantiation
     }
 
-    public static EagerSingleton getInstance() {
-        return instance;
-    }
 }
