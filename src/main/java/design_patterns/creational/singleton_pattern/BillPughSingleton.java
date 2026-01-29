@@ -1,6 +1,10 @@
 package design_patterns.creational.singleton_pattern;
 
+// Bill Pugh Singleton Implementation
+// Pros: Thread-safe, lazy initialization, efficient
+// Cons: More complex than eager initialization
 public class BillPughSingleton {
+
     private BillPughSingleton() {
         // private constructor to prevent instantiation)
     }
